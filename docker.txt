@@ -1,0 +1,15 @@
+//Iniciar y crear contenedor
+docker run -d --name mysql_test -e
+MYSQL_ROOT_PASSWORD=root -p 3307:3306 mysql:8
+//Entrar al contenedor
+docker exec -it mysql_test bash
+//Ingresar a mysql
+mysql -uroot -proot
+//crear BD
+create database EF;
+//Usar BD
+use EF;
+//crear tabla users
+create table users(nombre varchar(100) not null, apellido varchar(100) not null, correo varchar(100) not null, cel varchar(100) not null, horario varchar(100) not null);
+//Corroborar
+select * from users;
