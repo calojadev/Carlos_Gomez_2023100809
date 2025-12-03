@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='styles.css') }}"
+    />
+    <title>Todo Ganado - Dashboard</title>
+  </head>
+  <body>
+    <header>
+      <div class="contenido-header contenedor">
+        <h1>Todo Ganado</h1>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="hero-content contenedor">
+          <h2>Bienvenido a Todo Ganado</h2>
+          <p>
+            Tu plataforma confiable para información sobre ganado de calidad
+          </p>
+        </div>
+      </section>
+
+      <!-- Categorías de Ganado -->
+      <section id="categorias" class="categorias-section">
+        <div class="contenedor">
+          <h2 class="section-title">Categorías de Ganado Disponibles</h2>
+          <p class="section-subtitle">
+            Conoce nuestras 6 categorías especializadas
+          </p>
+
+          <div class="categorias-grid">
+            <!-- CATEGORIA TERNERO-->
+            <div class="categoria-card">
+              <div class="categoria-imagen">
+                <img
+                  src="{{ url_for('static', filename='img/ternero.jpg') }}"
+                  alt="ternero"
+                />
+              </div>
+              <div class="categoria-content">
+                <h3>Ternero/a</h3>
+                <p class="categoria-desc">
+                  Bovino joven, generalmente al pie de la madre.
+                </p>
+
+                <div class="categoria-info">
+                  <div class="info-item">
+                    <span class="info-label">Lote:</span>
+                    <span class="info-value">50 cabezas</span>
+                  </div>
+                  <div class="info-item">
+                    <span class="info-label">Precio por cabeza</span>
+                    <span class="info-value">$1,850</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- CATEGORIA NOVILLITO-->
+            <div class="categoria-card">
+              <div class="categoria-imagen">
+                <img
+                  src="{{ url_for('static', filename='img/novillito.jpg') }}"
+                  alt="novillito"
+                />
+              </div>
+              <div class="categoria-content">
+                <h3>Novillito</h3>
+                <p class="categoria-desc">
+                  Macho castrado de destete hasta aproximadamente los dos años.
+                </p>
+
+                <div class="categoria-info">
+                  <div class="info-item">
+                    <span class="info-label">Lote:</span>
+                    <span class="info-value">120 cabezas</span>
+                  </div>
+                  <div class="info-item">
+                    <span class="info-label">Precio por cabeza</span>
+                    <span class="info-value">$2,800</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="categoria-card">
+              <div class="categoria-imagen">
+                <img
+                  src="{{ url_for('static', filename='img/novillo.jpg') }}"
+                  alt="ternero"
+                />
+              </div>
+              <div class="categoria-content">
+                <h3>Novillo</h3>
+                <p class="categoria-desc">Macho castrado de mas de dos años.</p>
+
+                <div class="categoria-info">
+                  <div class="info-item">
+                    <span class="info-label">Lote:</span>
+                    <span class="info-value">100 cabezas</span>
+                  </div>
+                  <div class="info-item">
+                    <span class="info-label">Precio por cabeza</span>
+                    <span class="info-value">$2,300</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="categoria-card">
+              <div class="categoria-imagen">
+                <img
+                  src="{{ url_for('static', filename='img/vaquillona.jpg') }}"
+                  alt="ternero"
+                />
+              </div>
+              <div class="categoria-content">
+                <h3>Vaquillona</h3>
+                <p class="categoria-desc">
+                  Hembra desde el destete hasta su primera paricion.
+                </p>
+
+                <div class="categoria-info">
+                  <div class="info-item">
+                    <span class="info-label">Lote:</span>
+                    <span class="info-value">200 cabezas</span>
+                  </div>
+                  <div class="info-item">
+                    <span class="info-label">Precio por cabeza</span>
+                    <span class="info-value">$3,200</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="categoria-card">
+              <div class="categoria-imagen">
+                <img
+                  src="{{ url_for('static', filename='img/vaca.jpg') }}"
+                  alt="vaca"
+                />
+              </div>
+              <div class="categoria-content">
+                <h3>Vaca</h3>
+                <p class="categoria-desc">Hembra adulta.</p>
+
+                <div class="categoria-info">
+                  <div class="info-item">
+                    <span class="info-label">Lote:</span>
+                    <span class="info-value">170 cabezas</span>
+                  </div>
+                  <div class="info-item">
+                    <span class="info-label">Precio por cabeza</span>
+                    <span class="info-value">$3.400</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="categoria-card">
+              <div class="categoria-imagen">
+                <img
+                  src="{{ url_for('static', filename='img/toro.jpg') }}"
+                  alt="toro"
+                />
+              </div>
+              <div class="categoria-content">
+                <h3>Toro</h3>
+                <p class="categoria-desc">Macho entero (no castrado)</p>
+
+                <div class="categoria-info">
+                  <div class="info-item">
+                    <span class="info-label">Lote:</span>
+                    <span class="info-value">125 cabezas</span>
+                  </div>
+                  <div class="info-item">
+                    <span class="info-label">Precio por cabeza</span>
+                    <span class="info-value">$3,850</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Suscripción -->
+      <section class="suscripcion-section">
+        <div class="card contenedor">
+          <h2>Mas info</h2>
+          <p>Haz click aqui si quieres mas informacion</p>
+          <a class="boton boton-primary" href="/suscribirse">Info</a>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

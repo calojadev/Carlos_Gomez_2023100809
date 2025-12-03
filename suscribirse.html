@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='styles.css') }}"
+    />
+    <title>Todo Ganado</title>
+  </head>
+  <body>
+    <header>
+      <div class="contenido-header contenedor">
+        <h1>Suscribete</h1>
+      </div>
+    </header>
+
+    <div class="contenedor card">
+      <form action="/register" method="POST">
+        <label>Ingrese sus datos</label>
+        <input
+          type="text"
+          id="nombre"
+          name="nombre"
+          placeholder="Nombre"
+          required
+        />
+        <input
+          type="text"
+          id="apellido"
+          name="apellido"
+          placeholder="Apellido"
+          required
+        />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Correo"
+          required
+        />
+
+        <input type="Cel" id="Cel" name="Cel" placeholder="Cel" required />
+        <input
+          type="Horario"
+          id="Horario"
+          name="Horario"
+          placeholder="Horario"
+          required
+        />
+        <input type="submit" value="Registrar" />
+      </form>
+    </div>
+  </body>
+</html>
